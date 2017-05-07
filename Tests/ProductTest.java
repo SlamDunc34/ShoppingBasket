@@ -1,4 +1,5 @@
-import static org.junit.Assert.assertEquals;
+import ShoppingBasket.*
+import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ProductTest {
@@ -7,7 +8,7 @@ public class ProductTest {
 
     @Before
     public void before(){
-        milk = new Product("Shoes", 5000);
+        shoes = new Product("Shoes", 5000);
     }
 
     @Test
@@ -20,3 +21,4 @@ public class ProductTest {
         Integer expected = 5000;
         assertEquals( expected, shoes.getPrice() );
     }
+}

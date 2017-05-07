@@ -1,3 +1,8 @@
+package ShoppingBasket;
+import ShoppingBasket.*;
+
+import java.util.*;
+
 public class Product {
 
     private String name;
@@ -15,3 +20,4 @@ public class Product {
     public Integer getPrice() {
         return this.price;
     }
+}

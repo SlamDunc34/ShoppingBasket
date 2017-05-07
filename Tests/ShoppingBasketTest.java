@@ -1,4 +1,5 @@
-import static org.junit.Assert.assertEquals;
+import ShoppingBasket.*
+import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ShoppingBasketTest {
