@@ -13,6 +13,7 @@ public class ShoppingBasketTest {
     public void before(){
         shoppingBasket = new ShoppingBasket();
         shoes = new Product("Shoes", 5000);
+        jeans = new Product("Jeans", 7000);
     }
 
     @Test
@@ -38,4 +39,12 @@ public class ShoppingBasketTest {
         Integer expected = 0;
         assertEquals(expected, shoppingBasket.getBasketSize());
     }
+
+    @Test
+        public void canCalculateTotalPrice() {
+            basket.addProductToBasket(shoes);
+            basket.addProductToBasket(jeans);
+            assertEquals(12000, basket.getTotalPriceOfBasket());
+        }
+
 }
